@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/GoBack"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:background="#00FFFFFF"
+                    android:fontFamily="@font/inter"
+                    android:rotation="180"
+                    android:text="→"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:text="Client support"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/input2"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:ems="10"
+                    android:hint="Search"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="363dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="Who are the Persons not authorized to engage in commercial activities?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter"
+                android:text="According to Article 02 of Law No. 13-06 of July 23, 2013, amending and supplementing Article 08 of Law No. 04-08 of 14/8/2004, individuals convicted and not rehabilitated for crimes and offenses related to movements of capital to and from abroad, production and/or marketing of counterfeit products intended for consumption, bankruptcy, corruption, counterfeiting and/or infringement of copyright and neighboring rights, and drug trafficking cannot register or engage in commercial activities without obtaining a rehabilitation certificate."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="What are the conditions related to commercial activity?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="367dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter"
+                android:text="In this regard, a distinction should be made between regulated and non-regulated activities.  Non-regulated activities: Open to all applicants who meet the general conditions related to the quality of a merchant.  Regulated activities: Require prior authorization from the competent authorities. According to the provisions of Article 25 of Law 04-08 of 14/08/2004, amended and supplemented, approvals or provisional authorizations are acceptable for registration in the trade register for the exercise of a regulated activity."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="What are the conditions related to the location of commercial activity?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="373dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter"
+                android:text="The trade register for the exercise of a sedentary activity is issued to any individual or legal entity that justifies its legal establishment by owning or leasing a commercial space.  However, according to Article 21 of Law 04-08 of August 14, 2004, amended and supplemented, when the individual is a first-time investor, they can establish their residence until the completion of the project. In this case, the domicile is that of the business site.  Commercial companies without a registered office can domicile, for a maximum period of two years renewable once, with:  A statutory auditor or an accountant. A lawyer or a notary. The residence of the legal representative of the company. At the start of the activity, the domicile becomes that of the company's business site.  "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="What are the conditions related to individuals?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/inter"
+                android:text="Individuals: Must enjoy their legal capacity and civil rights.  Legal entities: Can take various forms, including commercial companies (general partnership, limited partnership, limited liability company, sole proprietorship), industrial and commercial public enterprises, associations, foreign companies operating in Algeria, and for-profit cooperatives."
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

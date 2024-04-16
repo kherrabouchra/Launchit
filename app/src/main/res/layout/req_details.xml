@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/rectangle"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="-5dp" />
+
+                <LinearLayout
+                    android:id="@+id/cards"
+                    android:layout_width="440dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="122dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="367dp"
+
+                        android:layout_height="348dp"
+                        android:layout_gravity="center_horizontal"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="11dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/inter_extrabold"
+                                    android:padding="10dp"
+                                    android:text="RequestID:"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/inter_extrabold"
+                                    android:padding="10dp"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/state"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginEnd="30dp"
+                                    android:fontFamily="@font/inter"
+                                    android:text="Pending"
+                                    android:textColor="#4881FE"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible"
+                                    app:emojiCompatEnabled="false" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="93dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="131dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginLeft="20dp"
+                                        android:fontFamily="@font/inter_extrabold"
+                                        android:gravity="center"
+                                        android:text="Submission  Date:"
+                                        android:textColor="#90000000" />
+
+                                    <TextView
+                                        android:id="@+id/SubDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginLeft="20dp"
+                                        android:fontFamily="@font/inter"
+                                        android:gravity="center"
+                                        android:textColor="#90000000" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/textView20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="41dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/inter_extrabold"
+                                    android:gravity="center"
+                                    android:text="---→"
+                                    android:textColor="#90000000" />
+
+                                <LinearLayout
+                                    android:layout_width="166dp"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:fontFamily="@font/inter_extrabold"
+                                        android:gravity="center"
+                                        android:text="Expected        result Date:"
+                                        android:textColor="#90000000" />
+
+                                    <TextView
+                                        android:id="@+id/ExpDate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginLeft="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/inter"
+                                        android:gravity="center"
+                                        android:textColor="#90000000" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/inter_extrabold"
+                                        android:padding="10dp"
+                                        android:text="Company:"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/comp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/inter"
+                                        android:textColor="#90000000"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView22"
+                                        android:layout_width="143dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/inter_extrabold"
+                                        android:padding="10dp"
+                                        android:text="Registration number:"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/compRegNum"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/inter"
+                                        android:textColor="#90000000"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView23"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/inter_extrabold"
+                                        android:padding="10dp"
+                                        android:text="Owned by:"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/ownership"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/inter"
+                                        android:textColor="#90000000"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="368.19dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="16dp"
+                        android:padding="20dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="11dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_extrabold"
+                                android:padding="10dp"
+                                android:text="Attached files:"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="10dp"
+                                tools:layout_editor_absoluteY="10dp" />
+
+                            <LinearLayout
+                                android:id="@+id/fileLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintTop_toBottomOf="@+id/textView25"
+                                tools:layout_editor_absoluteX="10dp"></LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="325dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="56dp"
+                    android:text="monitor the status and progress of your submitted requests in real-time."
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/GoBack"
+                            android:layout_width="64dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/inter"
+                            android:rotation="180"
+                            android:text="→"
+                            android:textSize="24sp"
+                            app:backgroundTint="#00FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_extrabold"
+                            android:text="Request tracking"
+                            android:textColor="@color/white"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

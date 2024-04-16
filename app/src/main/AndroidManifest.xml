@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/blue_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/splash"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Launchit"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".LoginActivity"   ></activity> <activity
+            android:name=".SignupActivity"   ></activity>
+        <activity android:name=".DashboardActivity"/>
+        <activity android:name=".FormActivity">
+
+        </activity>
+        <activity android:name=".About"/>
+        <activity android:name=".SupportActivity"/>
+        <activity android:name=".RessourcesActivity"/>
+        <activity android:name=".NotificationActivity"/>
+        <activity android:name=".ReqDetailsActivity"/>
+        <activity android:name=".MessageActivity"/>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".DashboardActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.launchit.NEW_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

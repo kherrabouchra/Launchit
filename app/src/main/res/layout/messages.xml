@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/GoBack"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:rotation="180"
+            android:text="→"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:backgroundTint="#00FFFFFF"
+            app:iconTint="#000000" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_extrabold"
+            android:text="Messaging"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="981dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="544dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <EditText
+            android:layout_width="344dp"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom|center"
+
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/input2"
+            android:drawableEnd="@android:drawable/ic_menu_send"
+            android:gravity="bottom"
+            android:hint="write your message here."
+            android:padding="20dp"></EditText>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
